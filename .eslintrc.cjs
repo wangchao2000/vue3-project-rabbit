@@ -10,5 +10,8 @@ module.exports = {
   },
   rules:{
     'vue/multi-word-component-names':0,//不在强制要求组件命名
+    // 'vue/no-parsing-error':0,
+    // 'vue/valid-attribute-name':0,
+    
   }
 }

@@ -1,25 +1,12 @@
-<template>
-  <div>
-    首页
-    <div>
-      <button @click="increment" class="test">{{ count }}</button>--{{ doubleCount }}
-    </div>
-    <!-- 二级路由出口 -->
-    <RouterView />
-  </div>
-</template>
-
 <script setup>
-import { useCounterStore } from "@/stores/counter";
-import { storeToRefs } from "pinia";
-
-
-const { count, doubleCount } = storeToRefs(useCounterStore());
-const { increment } = useCounterStore();
+import LayoutNav from './components/LayoutNav.vue'
+import LayoutHeader from './components/LayoutHeader.vue'
+import LayoutFooter from './components/LayoutFooter.vue'
 </script>
 
-<style lang="scss" scoped>
-.test{
-    color: $priceColor;
-}
-</style>
+<template>
+  <LayoutNav />
+  <LayoutHeader />
+  <RouterView />
+  <LayoutFooter />
+</template>
