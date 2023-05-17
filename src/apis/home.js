@@ -23,3 +23,16 @@ export function getFindHotAPI(){
         url:'/home/hot'
     })
 }
+
+// 获取所有的商品
+
+/**
+ * @description: 获取所有商品模块
+ * @param {*}
+ * @return {*}
+ */
+export function getGoodsAPI(){
+    return httpInstance({
+        url:'/home/goods'
+    })
+}
